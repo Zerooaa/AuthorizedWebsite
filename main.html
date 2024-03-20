@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+<title>Authorization Demo</title>
+</head>
+<body>
+<div class="banner">
+    <header>
+    <div class="navbar">
+        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/PUP%20LOGO.png?raw=true" class="logo">
+        <ul>
+            <nav>
+            <li><a href="#content">Home</a></li>
+            <li><a href="#description">Definition</a></li>
+            <li><a href="#difference">Difference</a></li>
+            <li><a href="#demonstration">Demonstration</a></li>
+            </nav>
+        </ul>
+    </div>
+    </header>
+    <section id="content">       
+        <h1>Home Activity</h1>
+        <p>Understand Authorization with this website. This is submitted by Mark Rances of BSIT 3-1N</p>
+    </section>
+    <section id="description">
+        <h2 id="title1">Definition of Authorization</h2>
+        <p id="p1">
+            <b>Authorization</b> is having an official permission for something to happen, or the act of giving someone official permission to do something.
+        </p>
+        <a class="button" href="https://dictionary.cambridge.org/us/dictionary/english/authorization" target="_blank">Click here for the Reference</a>
+    </section>
+    <section id="difference">
+        <h2 id="title2">With Authorization vs With No Authorization</h2>
+        <p id="p2">
+            <b>With Authorization</b>, everyone can access information and see the content but it will be less secure because you're giving access in public. 
+            <b>With No Authorization</b>, people can't access the information and see the content but it's secure and you can just give private access to designated audience.
+        </p>
+    </section>
+    <section id="demonstration">
+        <h2 id="title3">Demonstrating the With Authorization and No Authorization</h2>
+        <p id="p3">
+            In this button you will automatically download an html file that will lead you to a PUP Website.
+        </p>
+        <button id="noauth">No Auth Download</button>
+        <p id="p4">
+            In this button you will need an authorization to download the html file that will lead you to a PUP website.
+        </p>
+        <button id="withauth">With Auth Download</button>
+    </section>
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Please enter the password:</p>
+          <input type="password" id="passwordInput">
+          <button id="confirmPassword">Confirm</button>
+        </div>
+      </div>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>
