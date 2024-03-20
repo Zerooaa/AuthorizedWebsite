@@ -20,44 +20,31 @@ window.onscroll = () => {
 
 
 document.getElementById('noauth').addEventListener('click', function() {
-    // Create a new anchor element
     var downloadLink = document.createElement('a');
-    // Set the href attribute to the link of the HTML file you want to download
-    downloadLink.href = 'pupwebsite.htm';
-    // Set the download attribute to specify the filename
+    downloadLink.href = 'pupwebsite.html';
     downloadLink.download = 'pup.html';
-    // Click the anchor element to trigger the download
     downloadLink.click();
 });
 
 document.getElementById('withauth').addEventListener('click', function() {
-    // Display the password modal
     document.getElementById('passwordModal').style.display = 'block';
 });
 
-// Close the modal if the user clicks on the close button
+
 document.querySelector('.close').addEventListener('click', function() {
     document.getElementById('passwordModal').style.display = 'none';
 });
 
-// Confirm password
 document.getElementById('confirmPassword').addEventListener('click', function() {
     var enteredPassword = document.getElementById('passwordInput').value;
-    // Check if the entered password matches the correct password
     if (enteredPassword === 'cybersecurity') {
-        // Create a new anchor element
         var downloadLink = document.createElement('a');
-        // Set the href attribute to the link of the HTML file you want to download
-        downloadLink.href = 'pupwebsite.htm';
-        // Set the download attribute to specify the filename
+        downloadLink.href = 'pupwebsite.html';
         downloadLink.download = 'pup.html';
-        // Click the anchor element to trigger the download
         downloadLink.click();
-        // Close the modal
         document.getElementById('passwordModal').style.display = 'none';
     } else {
-        alert('Incorrect password. Please try again.');
-        // Clear the password input field
+        alert('Incorrect Password. Please try again.');
         document.getElementById('passwordInput').value = '';
     }
 });

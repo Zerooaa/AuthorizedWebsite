@@ -218,7 +218,6 @@ section #p4{
 }
 #noauth {
     text-align: center;
-    position: relative;
     padding: 10px 22px;
     background: #fff;
     border-radius: 6px;
@@ -231,12 +230,10 @@ section #p4{
     height: 30px;
     width: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 80px;
 }
 #withauth{
     text-align: center;
-    position: relative;
     padding: 10px 22px;
     background: #fff;
     border-radius: 6px;
@@ -249,9 +246,8 @@ section #p4{
     height: 30px;
     width: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 500px;
+    margin-right: 300px;
+    margin-top: 350px;
 }
 .modal {
     display: none;
