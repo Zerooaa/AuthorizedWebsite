@@ -179,7 +179,7 @@ section #p3{
 section #p4{
     width: 100%;
     position: absolute;
-    top: 360%;
+    top: 355%;
     transform: translateY(-50%);
     text-align: center;
     color: black;
@@ -229,8 +229,7 @@ section #p4{
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     height: 30px;
     width: 300px;
-    display: block;
-    margin-left: 80px;
+    position: absolute;
 }
 #withauth{
     text-align: center;
@@ -245,9 +244,7 @@ section #p4{
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     height: 30px;
     width: 300px;
-    display: block;
-    margin-right: 300px;
-    margin-top: 350px;
+    margin-top: 300px;
 }
 .modal {
     display: none;
@@ -257,27 +254,31 @@ section #p4{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Add a blurred background */
+}
+
+.modal-content {
+    background-color: #ffffff;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-  }
-  
-  .close {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    width: 60%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width */
+}
+
+.close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Change color on hover/focus */
     text-decoration: none;
     cursor: pointer;
-  }
+}
